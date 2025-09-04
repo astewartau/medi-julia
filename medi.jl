@@ -3,9 +3,9 @@ using Statistics
 using LinearAlgebra
 using MriResearchTools
 
-include("fgrad.jl")   # defines fgrad(chi, voxel_size)
-include("bdiv.jl")    # defines bdiv(Gx, voxel_size)
-include("sphere_kernel.jl")  # defines sphere_kernel(matrix_size, voxel_size, radius) and SMV(...)
+include("fgrad.jl")            # defines fgrad(chi, voxel_size)
+include("bdiv.jl")             # defines bdiv(Gx, voxel_size)
+include("sphere_kernel.jl")    # defines sphere_kernel(matrix_size, voxel_size, radius) and SMV(...)
 include("dipole_kernel.jl")    # defines dipole_kernel(matrix_size, voxel_size, B0_dir; domain="kspace")
 include("dataterm_mask.jl")    # defines dataterm_mask(mode, N_std, Mask)
 include("gradient_mask.jl")    # defines gradient_mask(mode, iMag, Mask, fgrad, voxel_size, percentage)
